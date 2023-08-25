@@ -1,17 +1,47 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+//import StarRating from "./StarRating";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+/* 
+function Test() {
+  const [rating, setRating] = useState(0);
+
+  return (
+    <div>
+      <StarRating
+        maxRating={7}
+        color="#11abcd"
+        size={30}
+        className="test"
+        defaultRating={3}
+        onSetRating={setRating}
+      />
+      <span>My Rating {rating}</span>
+    </div>
+  );
+} */
+
 root.render(
   <React.StrictMode>
     <App />
+
+    {/* <Test /> */}
+
+    {/*
+    <StarRating messages={["Terrible", "Bad", "Okay", "Good", "Amazing"]} />
+
+    <StarRating
+      maxRating={7}
+      color="#11abcd"
+      size={30}
+      className="test"
+      defaultRating={3}
+    />
+    */}
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
